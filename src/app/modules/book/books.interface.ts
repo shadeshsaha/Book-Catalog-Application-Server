@@ -13,7 +13,7 @@ export type IBook = {
   bookDescription?: string;
   author: string;
   genre: string;
-  year: string;
+  year?: string;
   publicationDate: string;
   price: number;
   bookImage?: string;
@@ -22,7 +22,7 @@ export type IBook = {
   addedBy?: string;
   editedBy?: string;
   lastUpdateTime?: string;
-  finishedReading?:boolean;
+  finishedReading?: boolean;
 };
 
 export type BookModel = Model<IBook>;
